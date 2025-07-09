@@ -1,0 +1,5 @@
+security:
+  issuers:
+    tenant01: http://0.0.0.0:8080/realms/multitannt-realm-1
+    tenant02: http://0.0.0.0:8080/realms/multitannt-realm-2
+  mode: STATIC # or DYNAMIC
