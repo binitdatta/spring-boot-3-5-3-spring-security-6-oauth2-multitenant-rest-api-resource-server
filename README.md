@@ -733,8 +733,8 @@ public JwtDecoder getDecoder(String issuerClaim) {
 
 Say you receive a JWT with:
 
-```json
-"iss": "http://localhost:8080/realms/tenant01"
+```
+"iss" : "http://localhost:8080/realms/tenant01"
 ```
 
 * `JwtHelper.extractIssuer()` is called to extract this `iss`.
@@ -1182,6 +1182,11 @@ public class TenantAdminController {
 
 
 ```
+
+## Comparative Sequence Diagram 
+
+![System Architecture](images/comparative-sd.png)
+
 
 ``` 
 package com.rollingstone.controller;
