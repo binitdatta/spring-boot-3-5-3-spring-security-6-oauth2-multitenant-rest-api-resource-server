@@ -5,31 +5,6 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-//@Component
-//public class DynamicIssuerRegistry {
-//
-//    private final Map<String, String> issuerMap = new ConcurrentHashMap<>();
-//
-//    public void registerIssuer(String tenantId, String issuerUrl) {
-//        issuerMap.put(tenantId, issuerUrl);
-//    }
-//
-//    public String resolveIssuer(String issuerClaim) {
-//        return issuerMap.values().stream()
-//                .filter(issuerClaim::equals)
-//                .findFirst()
-//                .orElseThrow(() -> new IllegalArgumentException("Unknown issuer: " + issuerClaim));
-//    }
-//
-//    public Map<String, String> getAllIssuers() {
-//        return Map.copyOf(issuerMap);
-//    }
-//
-//    public boolean containsIssuer(String issuerClaim) {
-//        return issuerMap.containsValue(issuerClaim);
-//    }
-//}
-
 @Component
 public class DynamicIssuerRegistry {
 
